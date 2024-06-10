@@ -142,7 +142,7 @@ const options = {
 }
 
 function setup(){
-  canvas = createCanvas(640,640); 
+  canvas = createCanvas(windowWidth,windowHeight); 
 
   // Create a tile map with the options declared
   myMap = mappa.tileMap(options); 
@@ -279,7 +279,7 @@ avatar_easing_lng += dy * easing;
   // ZONE 2 /////////////////// la Rainette Bleue
   /////////////////////////////
     // abs permet de calculer une valeur qui sera toujours positive pour obtenir la distance entre le centre de la zone 1 et la souris 
-  if(distance_zone2_avatar<0.00013024409485873356 ){
+  if(distance_zone2_avatar<0.00013024409485873356 && !sound2.isPlaying()){
   //  print("l'avatar est entré dans la zone de la zone2")
     sound2.play();
   }
@@ -302,7 +302,7 @@ avatar_easing_lng += dy * easing;
   /////////////////////////////
   
       // abs permet de calculer une valeur qui sera toujours positive pour obtenir la distance entre le centre de la zone 1 et la souris 
-  if(distance_zone3_avatar<0.00010103762152247064 ){
+  if(distance_zone3_avatar<0.00010103762152247064 && !sound3.isPlaying()){
   //  print("l'avatar est entré dans la zone de la zone3")
     sound3.play();
   }
@@ -328,7 +328,7 @@ let initial_lng = zone3_lng;// longitude de départ
   /////////////////////////////
 
   // abs permet de calculer une valeur qui sera toujours positive pour obtenir la distance entre le centre de la zone 1 et la souris 
-  if(distance_zone4_avatar<0.0000661955589329466 ){
+  if(distance_zone4_avatar<0.0000661955589329466 && !sound4.isPlaying()){
   //  print("l'avatar est entré dans la zone de la zone3")
     sound4.play();
   }
@@ -350,7 +350,7 @@ let initial_lng = zone3_lng;// longitude de départ
   // ZONE 5 /////////////////// la chaise abandonée
   /////////////////////////////
   // abs permet de calculer une valeur qui sera toujours positive pour obtenir la distance entre le centre de la zone 1 et la souris 
-  if(distance_zone5_avatar<0.0000896314423683986 ){
+  if(distance_zone5_avatar<0.0000896314423683986 && !sound5.isPlaying()){
   //  print("l'avatar est entré dans la zone de la zone3")
     sound5.play();
   }
@@ -371,7 +371,7 @@ let initial_lng = zone3_lng;// longitude de départ
   // ZONE 6 /////////////////// cinéma de quartier
   /////////////////////////////
   // abs permet de calculer une valeur qui sera toujours positive pour obtenir la distance entre le centre de la zone 1 et la souris 
-  if(distance_zone6_avatar<0.00007048513881513507 ){
+  if(distance_zone6_avatar<0.00007048513881513507 && !sound6.isPlaying()){
   //  print("l'avatar est entré dans la zone de la zone3")
     sound6.play();
   }
@@ -392,7 +392,7 @@ let initial_lng = zone3_lng;// longitude de départ
   // ZONE 7 /////////////////// soul du village
   /////////////////////////////
   // abs permet de calculer une valeur qui sera toujours positive pour obtenir la distance entre le centre de la zone 1 et la souris 
-  if(distance_zone7_avatar<0.00010158951215522016 ){
+  if(distance_zone7_avatar<0.00010158951215522016 && !sound7.isPlaying()){
   //  print("l'avatar est entré dans la zone de la zone3")
     sound7.play();
   }
@@ -413,7 +413,7 @@ let initial_lng = zone3_lng;// longitude de départ
   // ZONE 8 /////////////////// potos écharpés
   /////////////////////////////
   // abs permet de calculer une valeur qui sera toujours positive pour obtenir la distance entre le centre de la zone 1 et la souris 
-  if(distance_zone8_avatar<0.0001142450118944982 ){
+  if(distance_zone8_avatar<0.0001142450118944982 && !sound8.isPlaying()){
   //  print("l'avatar est entré dans la zone de la zone3")
     sound8.play();
   }
@@ -434,7 +434,7 @@ let initial_lng = zone3_lng;// longitude de départ
   // ZONE 9 /////////////////// conte dans l'océan 
   /////////////////////////////
   // abs permet de calculer une valeur qui sera toujours positive pour obtenir la distance entre le centre de la zone 1 et la souris 
-  if(distance_zone9_avatar<0.00007048513881513507 ){
+  if(distance_zone9_avatar<0.00007048513881513507 && !sound9.isPlaying()){
   //  print("l'avatar est entré dans la zone de la zone3")
     sound9.play();
   }
